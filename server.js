@@ -1,10 +1,11 @@
+const { config } = require('dotenv');
 const mongoose = require('mongoose');
+
+//here is where the congig vars are pulled in.
 const {mongoPass, mongoUser} = require('./config')
 
 
 const uri = `mongodb+srv://${mongoUser}:${mongoPass}@learning.bm32j.mongodb.net/Learning?retryWrites=true&w=majority`
-
-console.log(uri)
 
 mongoose.connect(uri, {
     useNewUrlParser: true,

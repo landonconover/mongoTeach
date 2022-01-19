@@ -1,3 +1,5 @@
+//This is where all the config vars are mapped and managed and pulled in. This gives a single source of truth for the config.
+
 const dotenv = require('dotenv');
 dotenv.config();
 module.exports = {
